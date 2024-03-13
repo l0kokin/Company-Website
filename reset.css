@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #ef5555;
+  --text-color: #2b3252;
+  --white: #ffffff99;
+  --container-color: #f8f8fa;
+  --black: #000000;
+  --transition: linear-gradient(
+    205.96deg,
+    rgba(67, 26, 26, 0) -7.14%,
+    #431a1a 121.86%
+  );
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 0px 110px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-seeMore {
+  background: transparent;
+}
