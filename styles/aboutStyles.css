@@ -1,0 +1,36 @@
+.about {
+  position: relative;
+  margin: 150px 250px 145px;
+  gap: 90px;
+}
+
+.about--img {
+  width: 590px;
+  z-index: 1;
+}
+
+.about--img--background {
+  position: absolute;
+  z-index: -1;
+  top: 10px;
+  left: 10px;
+}
+
+.about--text {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+}
+
+.about--description {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.about--btn {
+  color: var(--red) !important;
+  border: 1px solid var(--red) !important;
+  width: 130px;
+  margin-top: 10px;
+}

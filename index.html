@@ -10,8 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/headerStyles.css" />
+    <link rel="stylesheet" href="./styles/servicesStyles.css" />
+    <link rel="stylesheet" href="./styles/newsStyles.css" />
+    <link rel="stylesheet" href="./styles/aboutStyles.css" />
+    <link rel="stylesheet" href="./styles/footerStyles.css" />
   </head>
   <body>
     <header class="header flex">
@@ -52,6 +56,11 @@
           width="1700px"
           class="first-service--img"
         />
+        <!-- <img
+          src="./images/Rectangle 2 big.png"
+          alt="rectangleBig"
+          class="first-service--img-linear"
+        /> -->
         <p class="first-service--title">Company's First Service Title</p>
         <p class="first-service--description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
@@ -59,13 +68,13 @@
           perferendis, placeat corrupti aut quae provident sit saepe repellendus
           quaerat blanditiis ut unde?
         </p>
-        <button class="btn-seeMore">
+        <button class="first-service--btn btn-seeMore">
           See More
           <img src="./icons/Vector.svg" alt="arrow" />
         </button>
       </div>
       <div class="services">
-        <p class="services--title">Services</p>
+        <p class="services--title title">Services</p>
         <div class="service-items flex">
           <div>
             <div class="icon-container">
@@ -87,7 +96,150 @@
           </div>
         </div>
       </div>
+      <div class="news">
+        <div class="news--header">
+          <p class="news--title title">News</p>
+          <div class="arrows">
+            <img src="./icons/Arrow 2.svg" alt="arrow2" />
+            <img src="./icons/Arrow 1.svg" alt="arrow1" />
+          </div>
+        </div>
+        <div class="cards flex">
+          <div class="card--item">
+            <img src="./images/girl.png" alt="girl" class="front-image" />
+            <img
+              src="./images/Rectangle 3.png"
+              alt="rectangle"
+              class="background-image"
+            />
+            <img
+              src="./images/Rectangle 2.png"
+              alt="rectangleBrown"
+              class="linear"
+            />
+            <p class="card__title">There are many variations of passages</p>
+            <p class="card__date">22 April 2023</p>
+            <button class="news--btn btn-seeMore">
+              See More
+              <img src="./icons/Vector.svg" alt="arrow" class="front-image" />
+            </button>
+          </div>
+
+          <div class="card--item">
+            <img src="./images/beach.png" alt="beach" class="front-image" />
+            <img
+              src="./images/Rectangle 3.png"
+              alt="rectangle"
+              class="background-image"
+            />
+            <img
+              src="./images/Rectangle 2.png"
+              alt="rectangleBrown"
+              class="linear"
+            />
+            <p class="card__title">The point of using Lorem Ipsum</p>
+            <p class="card__date">22 April 2023</p>
+            <button class="news--btn btn-seeMore">
+              See More
+              <img src="./icons/Vector.svg" alt="arrow" />
+            </button>
+          </div>
+
+          <div class="card--item">
+            <img src="./images/bedside.png" alt="bedside" class="front-image" />
+            <img
+              src="./images/Rectangle 3.png"
+              alt="rectangle"
+              class="background-image"
+            />
+            <img
+              src="./images/Rectangle 2.png"
+              alt="rectangleBrown"
+              class="linear"
+            />
+            <p class="card__title">
+              I must explain to you how all this mistaken idea
+            </p>
+            <p class="card__date">19 April 2023</p>
+            <button class="news--btn btn-seeMore">
+              See More
+              <img src="./icons/Vector.svg" alt="arrow" />
+            </button>
+          </div>
+
+          <div class="card--item">
+            <img src="./images/clock.png" alt="clock" class="front-image" />
+            <img
+              src="./images/Rectangle 3.png"
+              alt="rectangle"
+              class="background-image"
+            />
+            <img
+              src="./images/Rectangle 2.png"
+              alt="rectangleBrown"
+              class="linear"
+            />
+            <p class="card__title">
+              On the other hand, we denounce with righteous
+            </p>
+            <p class="card__date">15 April 2023</p>
+            <button class="news--btn btn-seeMore">
+              See More
+              <img src="./icons/Vector.svg" alt="arrow" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="about flex">
+        <img src="./images/man.png" alt="man" class="about--img" />
+        <img
+          src="./images/Rectangle 8.png"
+          alt="rectangle"
+          class="about--img--background"
+        />
+        <div class="about--text">
+          <p class="title">About Company</p>
+          <p class="about--description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <button class="btn-seeMore about--btn">
+            See More
+            <img src="./icons/VectorRed.svg" alt="arrow" class="front-image" />
+          </button>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <footer class="footer flex">
+      <div class="footer--logo--container">
+        <div class="footer--logo">
+          <img src="./icons/logoWhite.svg" alt="logo" />
+          <p>Company <br />Name</p>
+        </div>
+        <p class="copyright">&copy; 2023 All Rights Reserved</p>
+      </div>
+      <div class="navigation">
+        <ul class="footer--list flex">
+          <li>Services</li>
+          <li>Projects</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+        <img src="./icons/insta & fb.png" alt="insta&fb" />
+      </div>
+      <div class="form">
+        <div>
+          <input type="text" placeholder="Name" class="input" />
+          <input type="text" placeholder="Email" class="input" />
+        </div>
+        <input type="text" placeholder="Text" class="input input--text" />
+        <button class="submit--btn">Send</button>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,107 @@
+.news {
+  background-color: var(--container-color);
+  width: 1920px;
+  height: 950px;
+  overflow: hidden;
+}
+
+.news--header {
+  position: relative;
+}
+
+.arrows {
+  position: absolute;
+  top: 119px;
+  left: 1578px;
+  display: flex;
+  gap: 28px;
+  img {
+    opacity: 0.2;
+  }
+
+  img:hover {
+    opacity: 1;
+  }
+}
+
+.news--title {
+  align-items: left;
+  padding: 94px 0px 87px 250px;
+}
+
+.cards {
+  gap: 50px;
+  margin-left: 250px;
+}
+
+.card--item {
+  max-height: 560px;
+  position: relative;
+
+  img {
+    max-width: 440px;
+  }
+
+  button,
+  p {
+    position: absolute;
+    left: 40px;
+  }
+}
+
+.card__title {
+  overflow: hidden;
+  width: 360px;
+  height: fit-content;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 41px;
+  color: white;
+  width: 360px;
+  top: 273px;
+  z-index: 2;
+}
+
+.card__date {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: white;
+  top: 414px;
+  z-index: 2;
+}
+
+.news--btn {
+  top: 468px;
+  z-index: 2;
+}
+
+.background-image {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.front-image {
+  position: relative;
+  z-index: 1;
+}
+
+.card--item:hover .background-image {
+  opacity: 1;
+}
+
+.linear {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background: linear-gradient(
+    205.96deg,
+    rgba(67, 26, 26, 0) -7.14%,
+    #431a1a 121.86%
+  );
+}
