@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/general.css" />
     <link rel="stylesheet" href="./styles/headerStyles.css" />
     <link rel="stylesheet" href="./styles/servicesStyles.css" />
     <link rel="stylesheet" href="./styles/newsStyles.css" />
@@ -26,41 +26,34 @@
           Name
         </p>
       </div>
-      <ul class="header-list flex">
-        <li class="header-list--item">
-          Home <img src="./icons/Line 1.png" alt="line" />
-        </li>
-        <li class="header-list--item">
-          Services <img src="./icons/Line 1.png" alt="line" />
-        </li>
-        <li class="header-list--item">
-          Projects <img src="./icons/Line 1.png" alt="line" />
-        </li>
-        <li class="header-list--item">
-          About <img src="./icons/Line 1.png" alt="line" />
-        </li>
-        <li class="header-list--item">
-          Contact <img src="./icons/Line 1.png" alt="line" />
-        </li>
-      </ul>
+      <nav class="menu-container">
+        <div class="burger-menu" onclick="toggleMenu()">
+          <div class="burger"></div>
+          <div class="burger"></div>
+          <div class="burger"></div>
+        </div>
+
+        <ul class="menu flex" id="menu">
+          <li>Home <img src="./icons/Line 1.png" alt="line" /></li>
+          <li>Services <img src="./icons/Line 1.png" alt="line" /></li>
+          <li>Projects <img src="./icons/Line 1.png" alt="line" /></li>
+          <li>About <img src="./icons/Line 1.png" alt="line" /></li>
+          <li>Contact <img src="./icons/Line 1.png" alt="line" /></li>
+        </ul>
+      </nav>
       <div class="search">
         <input type="text" placeholder="Search Keyword ..." />
         <img src="./icons/search-icon.png" alt="search icon" />
       </div>
     </header>
     <main>
-      <div class="first-service">
+      <section class="first-service">
         <img
           src="./images/laptop image.png"
           alt="laptop"
           width="1700px"
           class="first-service--img"
         />
-        <!-- <img
-          src="./images/Rectangle 2 big.png"
-          alt="rectangleBig"
-          class="first-service--img-linear"
-        /> -->
         <p class="first-service--title">Company's First Service Title</p>
         <p class="first-service--description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
@@ -72,8 +65,8 @@
           See More
           <img src="./icons/Vector.svg" alt="arrow" />
         </button>
-      </div>
-      <div class="services">
+      </section>
+      <section class="services">
         <p class="services--title title">Services</p>
         <div class="service-items flex">
           <div>
@@ -95,8 +88,8 @@
             <p class="service-name">Service Name</p>
           </div>
         </div>
-      </div>
-      <div class="news">
+      </section>
+      <section class="news">
         <div class="news--header">
           <p class="news--title title">News</p>
           <div class="arrows">
@@ -189,8 +182,8 @@
             </button>
           </div>
         </div>
-      </div>
-      <div class="about flex">
+      </section>
+      <section class="about flex">
         <img src="./images/man.png" alt="man" class="about--img" />
         <img
           src="./images/Rectangle 8.png"
@@ -213,7 +206,7 @@
             <img src="./icons/VectorRed.svg" alt="arrow" class="front-image" />
           </button>
         </div>
-      </div>
+      </section>
     </main>
     <footer class="footer flex">
       <div class="footer--logo--container">
@@ -241,5 +234,7 @@
         <button class="submit--btn">Send</button>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

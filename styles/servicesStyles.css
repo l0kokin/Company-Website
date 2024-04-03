@@ -11,26 +11,24 @@
   p,
   button {
     position: absolute;
-    left: 250px;
+    left: 15%;
   }
 }
 
 .first-service--btn {
-  top: 588px;
+  top: 75%;
 }
 
 .first-service--img {
   position: relative;
   margin: 0px 100px;
   width: 1700px;
-  height: 770px;
   background: var(--transition);
+
+  @media screen and (max-width: 760px) {
+    width: 100vh;
+  }
 }
-/* 
-  .first-service--img-linear {
-    position: absolute;
-    background: linear-gradient(205.96deg, rgba(67, 26, 26, 0) 0%, #431a1a 100%);
-  } */
 
 .first-service--title {
   color: white;
@@ -39,7 +37,11 @@
   font-size: 62px;
   font-weight: 700;
   line-height: 76px;
-  top: 311px;
+  top: 40%;
+
+  @media screen and (max-width: 760px) {
+    font-size: 38px;
+  }
 }
 
 .first-service--description {
@@ -48,7 +50,14 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  top: 483px;
+  top: 60%;
+
+  @media screen and (max-width: 760px) {
+    top: 58%;
+    font-size: 12px;
+    line-height: 18px;
+    width: 70%;
+  }
 }
 
 .services {
@@ -61,6 +70,11 @@
 
 .service-items {
   gap: 50px;
+
+  @media screen and (max-width: 760px) {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .service-name {
@@ -72,6 +86,10 @@
   justify-content: center;
   padding: 38px 0px;
   color: var(--black);
+
+  @media screen and (max-width: 760px) {
+    font-size: 24px;
+  }
 }
 
 .icon-container {
