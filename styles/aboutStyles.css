@@ -2,11 +2,19 @@
   position: relative;
   margin: 150px 250px 145px;
   gap: 90px;
+
+  @media screen and (max-width: 760px) {
+    flex-direction: column;
+    margin: 100px;
+  }
 }
 
 .about--img {
   width: 590px;
   z-index: 1;
+
+  @media screen and (max-width: 760px) {
+  }
 }
 
 .about--img--background {
@@ -20,6 +28,10 @@
   display: flex;
   flex-direction: column;
   gap: 37px;
+
+  @media screen and (max-width: 760px) {
+    width: 100%;
+  }
 }
 
 .about--description {

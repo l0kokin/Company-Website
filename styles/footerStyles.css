@@ -2,6 +2,12 @@
   background-color: var(--text-color);
   height: 330px;
   padding: 80px 250px 68px;
+  width: 100vw;
+
+  @media screen and (max-width: 760px) {
+    flex-direction: column;
+    height: fit-content;
+  }
 }
 
 .footer--logo--container {
