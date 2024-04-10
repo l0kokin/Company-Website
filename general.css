@@ -22,10 +22,7 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: var(--text-color);
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  overflow-x: hidden;
 }
 
 ul {

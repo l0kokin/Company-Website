@@ -3,19 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Company Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/general.css" />
-    <link rel="stylesheet" href="./styles/headerStyles.css" />
-    <link rel="stylesheet" href="./styles/servicesStyles.css" />
-    <link rel="stylesheet" href="./styles/newsStyles.css" />
-    <link rel="stylesheet" href="./styles/aboutStyles.css" />
-    <link rel="stylesheet" href="./styles/footerStyles.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="header flex">
@@ -93,11 +89,15 @@
         <div class="news--header">
           <p class="news--title title">News</p>
           <div class="arrows">
-            <img src="./icons/Arrow 2.svg" alt="arrow2" />
-            <img src="./icons/Arrow 1.svg" alt="arrow1" />
+            <button id="arrow2">
+              <img src="./icons/Arrow 2.svg" alt="arrow2" />
+            </button>
+            <button id="arrow1">
+              <img src="./icons/Arrow 1.svg" alt="arrow1" />
+            </button>
           </div>
         </div>
-        <div class="cards flex">
+        <div class="cards flex" id="cards">
           <div class="card--item">
             <img src="./images/girl.png" alt="girl" class="front-image" />
             <img
@@ -176,6 +176,46 @@
               On the other hand, we denounce with righteous
             </p>
             <p class="card__date">15 April 2023</p>
+            <button class="news--btn btn-seeMore">
+              See More
+              <img src="./icons/Vector.svg" alt="arrow" />
+            </button>
+          </div>
+
+          <div class="card--item">
+            <img src="./images/girl.png" alt="girl" class="front-image" />
+            <img
+              src="./images/Rectangle 3.png"
+              alt="rectangle"
+              class="background-image"
+            />
+            <img
+              src="./images/Rectangle 2.png"
+              alt="rectangleBrown"
+              class="linear"
+            />
+            <p class="card__title">There are many variations of passages</p>
+            <p class="card__date">22 April 2023</p>
+            <button class="news--btn btn-seeMore">
+              See More
+              <img src="./icons/Vector.svg" alt="arrow" class="front-image" />
+            </button>
+          </div>
+
+          <div class="card--item">
+            <img src="./images/beach.png" alt="beach" class="front-image" />
+            <img
+              src="./images/Rectangle 3.png"
+              alt="rectangle"
+              class="background-image"
+            />
+            <img
+              src="./images/Rectangle 2.png"
+              alt="rectangleBrown"
+              class="linear"
+            />
+            <p class="card__title">The point of using Lorem Ipsum</p>
+            <p class="card__date">22 April 2023</p>
             <button class="news--btn btn-seeMore">
               See More
               <img src="./icons/Vector.svg" alt="arrow" />
