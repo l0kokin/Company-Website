@@ -362,11 +362,16 @@
 
 .arrows {
   display: flex;
+  align-items: center;
   gap: 28px;
   padding-right: 250px;
 
   img {
     opacity: 0.2;
+  }
+
+  button {
+    height: fit-content;
   }
 
   img:hover {
