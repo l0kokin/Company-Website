@@ -370,10 +370,6 @@
     opacity: 0.2;
   }
 
-  button {
-    height: fit-content;
-  }
-
   img:hover {
     opacity: 1;
   }
@@ -387,6 +383,7 @@
 #arrow2 {
   border: none;
   background-color: var(--container-color);
+  height: fit-content;
 }
 
 .news--title {
