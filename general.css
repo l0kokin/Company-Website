@@ -17,6 +17,11 @@
   );
 }
 
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0em;

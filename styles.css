@@ -57,6 +57,12 @@
     position: relative;
     padding-bottom: 3px;
 
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: var(--text-color);
+    }
+
     img {
       opacity: 0;
       position: absolute;
@@ -109,11 +115,9 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--green);
-    padding: 20px;
-    box-sizing: border-box;
+    width: 80%;
     z-index: 1000;
-    background-color: var(--white);
+    background-color: var(--container-color);
     border: 1px solid var(--text-color);
     border-radius: 8px;
     padding: 30px;
@@ -148,6 +152,11 @@
       display: none;
     }
   }
+}
+
+.search *:focus {
+  outline: none;
+  box-shadow: 0 0 0 10px var(--container-color);
 }
 
 /* ---------------- MAIN SECTION -------------- */

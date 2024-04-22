@@ -1,8 +1,10 @@
+// Burger menu in mobile
 function toggleMenu() {
   var menu = document.getElementById("menu");
   menu.classList.toggle("show");
 }
 
+// Card slider
 const cardsContainer = document.querySelector("#cards");
 const arrow1 = document.querySelector("#arrow1");
 const arrow2 = document.querySelector("#arrow2");
